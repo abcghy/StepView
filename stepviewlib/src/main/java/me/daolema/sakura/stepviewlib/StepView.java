@@ -15,7 +15,11 @@ import android.view.View;
 public class StepView extends View {
 
     public enum State {
-        POSTED, RECEIVED, CANCELLED, DONE
+        POSTED,
+        RECEIVED,
+//        CANCELLING,
+        CANCELLED,
+        DONE
     }
 
     private State currentState = State.POSTED;
@@ -85,17 +89,24 @@ public class StepView extends View {
                 drawColorNode(canvas, "已完成", 100, Color.parseColor("#999999"));
                 break;
             }
+//            case CANCELLING: {
+//                drawColorNode(canvas, "已发单", -100, Color.parseColor("#999999"));
+//                drawColorNode(canvas, "已接单", -33, Color.parseColor("#999999"));
+//                drawColorNode(canvas, "取消中", 33, Color.parseColor("#FF9900"));
+//                drawColorNode(canvas, "已取消", 100, Color.parseColor("#999999"));
+//                break;
+//            }
             case CANCELLED: {
                 drawColorNode(canvas, "已发单", -100, Color.parseColor("#999999"));
-                drawColorNode(canvas, "已接单", -33, Color.parseColor("#999999"));
-                drawColorNode(canvas, "取消中", 33, Color.parseColor("#FF9900"));
-                drawColorNode(canvas, "已完成", 100, Color.parseColor("#999999"));
+                drawColorNode(canvas, "已接单", 0, Color.parseColor("#999999"));
+//                drawColorNode(canvas, "取消中", 33, Color.parseColor("#999999"));
+                drawColorNode(canvas, "已取消", 100, Color.parseColor("#FF6B6B"));
                 break;
             }
             case DONE: {
                 drawColorNode(canvas, "已发单", -100, Color.parseColor("#999999"));
                 drawColorNode(canvas, "已接单", 0, Color.parseColor("#999999"));
-                drawColorNode(canvas, "已完成", 100, Color.parseColor("#FF6B6B"));
+                drawColorNode(canvas, "已完成", 100, Color.parseColor("#00D51E"));
                 break;
             }
             default: {

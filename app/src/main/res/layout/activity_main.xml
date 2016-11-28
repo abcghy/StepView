@@ -25,10 +25,16 @@
         android:text="已接单"/>
 
     <Button
-        android:id="@+id/cancelled"
+        android:id="@+id/cancelling"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="取消中"/>
+
+    <Button
+        android:id="@+id/cancelled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已取消"/>
 
     <Button
         android:id="@+id/done"

@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     StepView stepView;
     Button posted;
     Button received;
+    Button cancelling;
     Button cancelled;
     Button done;
 
@@ -24,11 +25,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         stepView  = (StepView) findViewById(R.id.sv_grab_detail_state);
         posted    = (Button) findViewById(R.id.posted);
         received  = (Button) findViewById(R.id.received);
+        cancelling = (Button) findViewById(R.id.cancelling);
         cancelled = (Button) findViewById(R.id.cancelled);
         done      = (Button) findViewById(R.id.done);
 
         posted   .setOnClickListener(this);
         received .setOnClickListener(this);
+        cancelling.setOnClickListener(this);
         cancelled.setOnClickListener(this);
         done     .setOnClickListener(this);
     }
@@ -44,6 +47,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 stepView.setState(StepView.State.RECEIVED);
                 break;
             }
+//            case R.id.cancelling: {
+//                stepView.setState(StepView.State.CANCELLING);
+//                break;
+//            }
             case R.id.cancelled: {
                 stepView.setState(StepView.State.CANCELLED);
                 break;
