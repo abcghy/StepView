@@ -66,7 +66,7 @@ public class StepView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.translate(getMeasuredWidth() / 2, getMeasuredHeight() / 2);
+        canvas.translate(getMeasuredWidth() / 2, getMeasuredHeight() / 2 + dp2px(9));
 
         mPaint.setStrokeWidth(dp2px(2));
         mPaint.setColor(Color.parseColor("#EFEFEF"));

@@ -10,7 +10,7 @@
     <me.daolema.sakura.stepviewlib.StepView
         android:id="@+id/sv_grab_detail_state"
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="48dp" />
 
     <Button
         android:id="@+id/posted"
