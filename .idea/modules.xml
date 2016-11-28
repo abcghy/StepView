@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GrabDetailStepView.iml" filepath="$PROJECT_DIR$/GrabDetailStepView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stepviewlib/stepviewlib.iml" filepath="$PROJECT_DIR$/stepviewlib/stepviewlib.iml" />
+    </modules>
+  </component>
+</project>

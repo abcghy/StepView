@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.daolema.sakura.grabdetailstepview.MainActivity"
+    android:orientation="vertical">
+
+    <me.daolema.sakura.stepviewlib.StepView
+        android:id="@+id/sv_grab_detail_state"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/posted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已发单"/>
+
+    <Button
+        android:id="@+id/received"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已接单"/>
+
+    <Button
+        android:id="@+id/cancelled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消中"/>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已完成"/>
+
+</LinearLayout>
